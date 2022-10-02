@@ -1,0 +1,51 @@
+<div class="min-vh-100">
+    <header id="main-header" class="py-2 bg-secondary text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h2><i class="fa-solid fa-user"></i> Registrarse</h2>
+            </div>
+          </div>
+        </div>
+    </header>
+      
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class=""></div>
+            </div>
+        </div>
+    </section>
+    
+    <flash-messages></flash-messages>
+    
+    <section id="login">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Registrarse</h4>
+                        </div>
+                        <div class="card-body">
+                            <form (submit)="registrarse()">
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control mb-2" name="email" id="email" [(ngModel)]="email" required>
+                                </div>
+    
+                                <div class="form-group">
+                                    <label for="password">Contraseña</label>
+                                    <input type="password" name="password" class="form-control mb-2" id="
+                                    password" [(ngModel)]="password" required>
+                                </div>
+    
+                                <input type="submit" value="Register" class="btn btn-primary w-100 mt-3">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
